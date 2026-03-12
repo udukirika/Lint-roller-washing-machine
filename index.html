@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re:set - 당신의 마음을 위한 힐링 테스트</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Inter & Nanum Myeongjo for healing vibe -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Intro Screen -->
+        <section id="intro" class="screen active">
+            <div class="intro__content">
+                <h1 class="intro__title">Re:set</h1>
+                <p class="intro__subtitle">당신의 마음은 어떤 속도로 다시 피어날까요?</p>
+                <button id="start-btn" class="btn btn--primary">테스트 시작하기</button>
+            </div>
+        </section>
+
+        <!-- Quiz Screen -->
+        <section id="quiz" class="screen">
+            <div class="progress-bar">
+                <div id="progress-indicator" class="progress-bar__fill"></div>
+            </div>
+            <div class="quiz__card-container">
+                <div id="question-card" class="quiz__card">
+                    <h2 id="question-text" class="quiz__question">질문이 노출됩니다.</h2>
+                    <div class="quiz__options">
+                        <button class="option-btn" data-score="2">옵션 A</button>
+                        <button class="option-btn" data-score="1">옵션 B</button>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz__navigation">
+                <button id="back-btn" class="btn btn--secondary">뒤로 가기</button>
+            </div>
+        </section>
+
+        <!-- Result Screen -->
+        <section id="result" class="screen">
+            <div class="result__card">
+                <div id="result-icon" class="result__icon">🌱</div>
+                <h2 id="result-title" class="result__title">Result Title</h2>
+                <div class="result__keyword-badge" id="result-keyword">키워드</div>
+                <p id="result-desc" class="result__description">결과 설명이 노출됩니다.</p>
+                
+                <div class="result__section">
+                    <h3>🌿 추천 리셋 행동</h3>
+                    <p id="result-action">추천 행동</p>
+                </div>
+
+                <div class="result__section result__section--suggestion">
+                    <h3>✨ 당신에게 작은 제안</h3>
+                    <p id="result-suggestion">제안 내용</p>
+                </div>
+
+                <button id="restart-btn" class="btn btn--primary">다시 테스트하기</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
